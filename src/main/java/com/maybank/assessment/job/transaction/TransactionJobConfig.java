@@ -67,8 +67,8 @@ public class TransactionJobConfig extends DefaultBatchConfigurer {
     }
 
     @Bean
-    public Job importUserJob(JobCompletionNotificationListener listener, Step step1) {
-        return jobBuilderFactory.get("importUserJob")
+    public Job importTransactionJob(JobCompletionNotificationListener listener, Step step1) {
+        return jobBuilderFactory.get("importTransactionJob")
                 .incrementer(new RunIdIncrementer())
                 .listener(listener)
                 .flow(step1)
