@@ -28,10 +28,10 @@ public class TransactionEntity {
     private Timestamp transactionDate;
 
     @Column(name = "record_create_date")
-    private Date recordCreateDate;
+    private Timestamp recordCreateDate;
 
     @Column(name = "record_update_date")
-    private Date recordUpdateDate;
+    private Timestamp recordUpdateDate;
 
     public int getTransactionId() {
         return transactionId;
@@ -81,19 +81,19 @@ public class TransactionEntity {
         this.transactionDate = transactionDate;
     }
 
-    public Date getRecordCreateDate() {
+    public Timestamp getRecordCreateDate() {
         return recordCreateDate;
     }
 
-    public void setRecordCreateDate(Date recordCreateDate) {
+    public void setRecordCreateDate(Timestamp recordCreateDate) {
         this.recordCreateDate = recordCreateDate;
     }
 
-    public Date getRecordUpdateDate() {
+    public Timestamp getRecordUpdateDate() {
         return recordUpdateDate;
     }
 
-    public void setRecordUpdateDate(Date recordUpdateDate) {
+    public void setRecordUpdateDate(Timestamp recordUpdateDate) {
         this.recordUpdateDate = recordUpdateDate;
     }
 }
