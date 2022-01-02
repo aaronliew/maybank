@@ -22,7 +22,7 @@ public class TransactionController implements TransactionOperations{
     TransactionService transactionService;
 
     @Override
-    public TransactionResponse getTransactions(int pageSize, int pageNumber,
+    public TransactionResponse getTransactions(Integer pageSize, Integer pageNumber,
                                                      String customerId, String accountNumber,
                                                      String description) {
 

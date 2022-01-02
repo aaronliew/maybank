@@ -11,8 +11,8 @@ import java.util.List;
 @RequestMapping("/transaction")
 public interface TransactionOperations {
     @GetMapping("/")
-    TransactionResponse getTransactions(@RequestParam("pageSize") int pageSize,
-                                              @RequestParam("pageNumber") int pageNumber,
+    TransactionResponse getTransactions(@RequestParam("pageSize") Integer pageSize,
+                                              @RequestParam("pageNumber") Integer pageNumber,
                                               @RequestParam("customerId") String customerId,
                                               @RequestParam("accountNumber") String accountNumber,
                                               @RequestParam("description") String description);
