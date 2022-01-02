@@ -30,3 +30,8 @@ This project is using @Bean, @Component, @Service to define a singleton and init
 ## Dependency Injection pattern(DI)
 @Autowired is used to do inject dependency. 
 
+## Class diagram
+[Class diagram link](https://drive.google.com/file/d/1-6JgI7J1BXu8SyZpG9d_GaWdgc5vc_F2/view?usp=sharing)
+
+## Activity diagram
+[Activity diagram link](https://drive.google.com/file/d/1YZClnLskrm-uXclyRYyAWzn5URjPdYlr/view?usp=sharing)
