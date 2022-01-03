@@ -14,8 +14,8 @@ public class PaginationUtil {
         return pagination;
     }
 
-    public static void validatePagination(int pageNumber, int pageSize) throws InvalidPaginationException {
-        if (pageNumber <= 0 || pageSize <= 0) {
+    public static void validatePagination(Integer pageNumber, Integer pageSize) throws InvalidPaginationException {
+        if (pageNumber == null || pageSize == null || pageNumber <= 0 || pageSize <= 0) {
             throw new InvalidPaginationException();
         }
     }
